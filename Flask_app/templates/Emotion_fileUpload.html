@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/28dd671034.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/Emotion_fileUpload.css') }}">
+    <script src="{{ url_for('static', filename = 'scriptjs/Emotion_fileUpload.js') }}"></script>
+
+    <title>Image Upload</title>
+  </head>
+
+  <body>
+    <div style = "display: flex; justify-content: center;"><h1 class = "sign_heading">&nbsp;&nbsp;&nbsp; Emotion - Detection</h1></div>
+    <form class = "uploader" action = "/form" method = "post" enctype="multipart/form-data" onsubmit="return validateForm()">
+      <div class = "div1" onclick="selectFile()">
+        <!-- <label for="file-upload" class="custom-file-upload">
+          <i class="fa fa-cloud-upload"></i> Custom Upload
+          <br>
+        </label> -->
+        <label style = "cursor: pointer; margin-bottom: 20px;"><i class="fa fa-cloud-upload"></i> Custom Upload</label>
+        <input id="file-upload" type="file" accept="image/png, image/jpeg" onchange="handleFileUpload(event)" name = "imageFile"/>
+        <img id="preview-image" style="max-width: 100%; margin-top: 10px; border: 2px solid black; display: none">
+        <span id="image-name" style="margin-top: 10px;"></span>
+      </div>
+      <div for="file-upload" class = "div2">
+        <div class = "link-div"><a href = "{{ url_for('Start') }}"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Home Page</a></div>
+        <input class = "buttoni" type = "submit" value = "Predict Image">
+      </div>
+    </form>
+    <!-- <form class = "uploader" id = "file-upload" action = "/form" method = "POST" enctype = "multipart/form-type">
+      <label for="file-upload">
+        <div class = "custom-upload"><i class="fa fa-cloud-upload"></i> Custom Upload</div>
+        <input id = "file-upload"class = "filei" type = "file" name = "imageFile"><br>
+        <input class = "buttoni" type = "submit" value = "Predict Image">
+      </label>
+      <label for="file-upload" class="custom-file-upload">
+    <i class="fa fa-cloud-upload"></i> Custom Upload
+  </label>
+  <input id="file-upload" type="file"/>
+    </form> -->
+    <!-- <form id="file-upload-form" class="uploader">
+      <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+    
+      <label for="file-upload" id="file-drag">
+        <img id="file-image" src="#" alt="Preview" class="hidden">
+        <div id="start">
+          <i class="fa-solid fa-download"></i>
+          <div>Select a file or drag here</div>
+          <div id="notimage" class="hidden">Please select an image</div>
+          <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+        </div>
+        <div id="response" class="hidden">
+          <div id="messages"></div>
+           <progress class="progress" id="file-progress" value="0"> 
+          <button>M</button>
+          </progress>
+        </div>
+      </label>
+    </form> -->
+  </body>
+
+
+</html>

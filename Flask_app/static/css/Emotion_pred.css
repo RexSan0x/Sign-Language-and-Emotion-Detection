@@ -1,0 +1,46 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Poppins';
+}
+
+.sign_heading {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pred-div {
+    font-size: 30px;
+}
+
+.img-div img {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+button {
+    background-color: none;
+    color: #333;
+    border: 2px solid rgb(76, 182, 190);
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    transition: 0.2s;
+    padding: 5px 40px;
+    margin-top: 20px;
+    height: 70px;
+    width: 450px;
+}
+
+button {
+    background-color: rgb(76, 182, 190);
+    color: whitesmoke;
+}

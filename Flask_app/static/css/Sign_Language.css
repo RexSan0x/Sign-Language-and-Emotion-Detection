@@ -1,0 +1,71 @@
+body {
+    background-color: #333;
+}
+
+.sign_heading {
+    font-family: 'Poppins';
+    font-size: 50px;
+    color: whitesmoke;
+    margin-bottom: 55px;
+}
+
+.first-image img {
+    border: 5px solid white;
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 40%;
+    height: 570px;
+    width: 770px;
+    z-index: 3;
+    margin-right: 60px;
+}
+
+.second-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.chart {
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+
+.main_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 10px;
+    /* border-radius: 20%; */
+    border: 2px solid whitesmoke;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+.btn:hover a {
+    color: #333;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px;
+
+}

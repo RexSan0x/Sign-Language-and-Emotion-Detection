@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/homepage.css') }}">
+    <title>HomePage</title>
+</head>
+
+<body>
+    <div class="splitscreen">
+        <div class="left">
+            <h1 style = "margin-bottom: 1px;">Emotion </h1>
+            <h1>Detection</h1>
+            <div class="left_button">
+                <a href="{{ url_for('emotion') }}">Go to Page</a>
+            </div>
+        </div>
+        <div class="right">
+            <h1 style = "margin-bottom: 1px;">
+                Sign Language
+            </h1>
+            <h1>Recognition</h1>
+            <div class="right_button">
+                <a href="{{ url_for('Sign') }}">Go to Page</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

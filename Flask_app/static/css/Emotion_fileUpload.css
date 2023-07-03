@@ -1,0 +1,121 @@
+body {
+    background-color: whitesmoke;
+}
+
+.sign_heading {
+    font-family: 'Poppins';
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.uploader {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.uploader .div1 {
+    /* float: left; */
+    /* clear: both; */
+    width: 100%;
+    padding: 50px 100px;
+    text-align: center;
+    background: #fff;
+    border-radius: 7px;
+    border: 3px solid #eee;
+    transition: all .2s ease;
+    user-select: none;
+    font-size: 30px;
+}
+
+.uploader .div1:hover {
+    border-color: #454cad;
+    border: 3px solid #454cad;
+    box-shadow: inset 0 0 0 6px #eee;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+} */
+.div2 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttoni {
+    background-color: none;
+    color: #333;
+    border: 2px solid rgb(76, 182, 190);
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    transition: 0.2s;
+    padding: 5px 40px;
+    margin-top: 20px;
+    height: 70px;
+    width: 350px;
+}
+
+.div2 .link-div:hover,
+.buttoni:hover {
+    background-color: rgb(76, 182, 190);
+    color: whitesmoke;
+}
+
+.div2 .link-div:hover a {
+    color: whitesmoke;
+}
+
+#preview-image {
+    height: 300px;
+    width: 300px;
+}
+
+.link-div a {
+    text-decoration: none;
+    color: #333;
+}
+
+.div2 .link-div {
+    height: 70px;
+    line-height: 70px;
+    width: 350px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #333;
+    border: 2px solid rgb(76, 182, 190);
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    transition: 0.2s;
+    padding: 0px 30px;
+}

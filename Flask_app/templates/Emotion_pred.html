@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/28dd671034.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/Emotion_pred.css') }}">
+    <title>Emotion Prediction</title>
+  </head>
+
+  <body>
+    <div style = "display: flex; justify-content: center;"><h1 class = "sign_heading">&nbsp;&nbsp;&nbsp; Emotion - Detection</h1></div>
+    <div class = "main-div">
+        <div class = "img-div"><img src = "{{ url_for('static', filename = 'Image_emotion/Temp_emotion_predImg.png') }}" alt = 'Image'></div>
+        <div class = "pred-div">Prediction: {{ pred }}</div>
+        <div class = "btn-div">
+            <a href = "{{ url_for('back') }}"><button class = "btn1"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back to prediction</button></a>
+        </div>
+    </div>
+  </body>
+</html>

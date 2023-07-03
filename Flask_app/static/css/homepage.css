@@ -1,0 +1,99 @@
+/* Code pen made by Arne */
+
+:root {
+    --color_one: #333;
+    --color_two: whitesmoke;
+    --color_three: rgb(76, 182, 190);
+    --color_four: rgb(204, 53, 53);
+    --font:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:var(--font);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    transition: font-size 0.5s;
+}
+
+.splitscreen {
+    display: flex;
+    height: 100vh;
+}
+
+.left,
+.right {
+    flex: 50%;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color_two);
+    color: var(--color_one);
+    height: 100vh;
+    transition: all 0.4s;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color_one);
+    color: var(--color_two);
+    height: 100vh;
+    transition: all 0.4s;
+}
+
+.left .left_button a {
+    text-decoration: none;
+    color: var(--color_one);
+    font-size: 20px;
+    padding: 10px;
+    /* border-radius: 20%; */
+    border: 2px solid var(--color_three);
+}
+
+.right .right_button a {
+    text-decoration: none;
+    color: var(--color_two);
+    font-size: 20px;
+    padding: 10px;
+    /* border-radius: 20%; */
+    border: 2px solid var(--color_four);
+}
+
+.left:hover h1{
+    font-size: 70px;
+    color: var(--color_three);
+
+}
+
+.right:hover h1{
+    font-size: 70px;
+    color: var(--color_four);
+}
+
+.left .left_button a:hover {
+    background-color: var(--color_three);
+    color: var(--color_two);
+}
+
+.right .right_button a:hover {
+    background-color: var(--color_four);
+    color: var(--color_one);
+
+}

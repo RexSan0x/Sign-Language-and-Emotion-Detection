@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/Sign_Language.css') }}">
+    <title>Sign Language Detection</title>
+  </head>
+
+  <body>
+    <div style = "display: flex; justify-content: center;"><h1 class = "sign_heading">Sign Language Recognition</h1></div>
+    <div class = 'main_div'>
+      <div class = "first-image">
+          <img src="{{ url_for('video') }}" />
+      </div>
+      <div class = "second-image">
+        <div class = "chart">Sign Language chart</div>
+        <img src = "{{ url_for('static', filename = 'Sign_Language_Chart/Sign_language_chart.png') }}" alt = 'Image'>
+      </div>
+    </div>
+    <div class = "btn" style = "display: flex; align-items: center; justify-content: center; margin-top: 60px;">
+      <a href = "{{ url_for('Start') }}">Back to Home Page</a>
+    </div>
+  </body>
+</html>
