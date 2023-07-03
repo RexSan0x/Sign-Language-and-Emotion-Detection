@@ -7,7 +7,8 @@ The sign language detection model is designed to identify American character sig
 ├── <font color="#26A269"><b>create_dataset.py</b></font>
 ├── <font color="#26A269"><b>create_img.py</b></font>
 ├── <font color="#26A269"><b>inferece_sign_lang.py</b></font>
-└── <font color="#26A269"><b>train_classifier.py</b></font>
+├── <font color="#26A269"><b>train_classifier.py</b></font>
+└── <font color="#26A269"><b>requirements.txt.py</b></font>
 </pre>
 
 This folder contains the following files:
